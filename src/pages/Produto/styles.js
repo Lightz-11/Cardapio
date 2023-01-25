@@ -102,8 +102,8 @@ export const Main = styled("div", {
     }
 });
 
-export const Title = styled("span", {
-    color: "#ffffff90",
+export const Title = styled("h2", {
+    color: "#aaaaaa",
     fontWeight: 700
 });
 
