@@ -103,13 +103,13 @@ export const Main = styled("div", {
 });
 
 export const Title = styled("h2", {
-    color: "#aaaaaa",
+    color: "grey",
     fontWeight: 700
 });
 
 export const Desc = styled("span", {
     color: "white",
-    fontWeight: "100"
+    fontWeight: 100
 });
 
 export const Info = styled("div", {

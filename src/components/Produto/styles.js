@@ -31,6 +31,6 @@ export const Container = styled("div", {
         fontSize: "1.6rem",
         fontWeight: 700,
         paddingLeft: "2rem",
-        color: "#aaaaaa"
+        color: "grey"
     }
 });
