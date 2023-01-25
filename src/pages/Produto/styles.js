@@ -108,8 +108,8 @@ export const Title = styled("span", {
 });
 
 export const Desc = styled("span", {
-    color: "white !important",
-    fontWeight: "100 !important"
+    color: "white",
+    fontWeight: "100"
 });
 
 export const Info = styled("div", {
