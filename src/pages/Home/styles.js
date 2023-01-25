@@ -17,6 +17,7 @@ export const Celular = styled("div", {
     borderRadius: "5rem",
     position: "relative",
     background: "rgb(10,10,10)",
+    overflow: "hidden",
 
     "@sm": {
         width: "100%",
