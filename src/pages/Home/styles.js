@@ -63,6 +63,7 @@ export const MenuInferior = styled("div", {
 export const Main = styled("div", {
     padding: "2rem 2.5rem 0rem 2.5rem",
     height: "calc(100% - 56.5px)",
+    overflow: "hidden",
 
     h1: {
         color: "white",
