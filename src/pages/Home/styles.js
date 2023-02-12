@@ -24,7 +24,9 @@ export const Celular = styled("div", {
         height: "100%",
         borderRadius: 0,
         border: "none",
-        position: 'fixed'
+        position: 'fixed',
+        top: 0,
+        left: 0
     }
 });
 
