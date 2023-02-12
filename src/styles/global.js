@@ -3,23 +3,8 @@ import { globalCss } from "@stitches/react";
 export const GlobalStyles = globalCss({
     ":root": {
         fontSize: "62.5%",
-        overflow: "hidden"
-
-        // "@media (max-width:1200px)": {
-        //   fontSize: "56.25%"
-        // },
-
-        // "@media(max-width:1080px)": {
-        //   fontSize: "50%"
-        // },
-
-        // "@media(max-width: 900px)": {
-        //   fontSize: "43.75%"
-        // },
-
-        // "@media(max-width: 790px)": {
-        //   fontSize: "38.5%"
-        // }
+        overflow: "hidden",
+        '-webkit-overflow-scrolling': "touch"
     },
 
     "*": {
@@ -46,7 +31,8 @@ export const GlobalStyles = globalCss({
         minHeight: "100vh",
         fontFamily: "Arial, Helvetica, sans-serif",
         backgroundColor: "rgb(10,10,10)",
-        overflow: "hidden"
+        overflow: "hidden",
+        '-webkit-overflow-scrolling': "touch"
     },
 
     button: {
