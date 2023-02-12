@@ -23,7 +23,8 @@ export const Celular = styled("div", {
         width: "100%",
         height: "100%",
         borderRadius: 0,
-        border: "none"
+        border: "none",
+        position: 'fixed'
     }
 });
 
