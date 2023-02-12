@@ -8,6 +8,10 @@ export const Container = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",
+    
+    '@sm': {
+        position: 'fixed'
+    }
 });
 
 export const Celular = styled("div", {
