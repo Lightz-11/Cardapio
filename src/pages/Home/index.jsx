@@ -2,6 +2,7 @@ import {
     Celular,
     Container,
     Grid,
+    Header,
     Main,
     MenuInferior,
     MenuSuperior
@@ -144,10 +145,12 @@ export function Home() {
                     </MenuSuperior>
                 )}
 
-                <Main>
+                <Header>
                     <h1>Cardápio Route Serrana</h1>
                     <Busca setValor={setBusca} />
+                </Header>
 
+                <Main>
                     <Grid>
                         {categoriasMostradas.map((categoria) => (
                             <Categoria key={categoria.id} data={categoria} />
@@ -156,7 +159,7 @@ export function Home() {
                 </Main>
 
                 {!low && <MenuInferior />}
-                
+
             </Celular>
         </Container>
     );

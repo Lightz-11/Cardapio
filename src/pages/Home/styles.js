@@ -8,7 +8,6 @@ export const Container = styled("div", {
     alignItems: "center",
     justifyContent: "center",
     overflow: "hidden",
-    'touch-action': "none"
 });
 
 export const Celular = styled("div", {
@@ -64,9 +63,23 @@ export const MenuInferior = styled("div", {
     bottom: 20
 });
 
-export const Main = styled("div", {
+export const Header = styled('div', {
+
+    position: 'fixed',
+    width: '100%',
     padding: "2rem 2.5rem 0rem 2.5rem",
-    height: "calc(100% - 56.5px)",
+    top: 0,
+
+    h1: {
+        color: "white",
+        fontSize: "2.5rem"
+    },
+
+});
+
+export const Main = styled("div", {
+    padding: "12rem 2.5rem 2rem 2.5rem",
+    height: "100%",
     overflow: "hidden",
 
     h1: {
@@ -82,7 +95,7 @@ export const Main = styled("div", {
 export const Grid = styled("div", {
     display: "grid",
     gap: "2rem",
-    maxHeight: "calc(100% - 110px)",
+    maxHeight: "100%",
     borderRadius: "0rem 0rem 2rem 2rem",
     overflowY: "auto",
     paddingBottom: "1rem",
