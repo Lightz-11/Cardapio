@@ -81,6 +81,6 @@ export const Grid = styled("div", {
     maxHeight: "calc(100% - 110px)",
     borderRadius: "0rem 0rem 2rem 2rem",
     overflowY: "auto",
-    paddingBottom: "5rem",
+    paddingBottom: "1rem",
     gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))"
 });

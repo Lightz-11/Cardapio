@@ -156,6 +156,11 @@ export function Home() {
                 </Main>
 
                 {!low && <MenuInferior />}
+
+                <footer>
+                    <p>a</p>
+                </footer>
+
             </Celular>
         </Container>
     );
