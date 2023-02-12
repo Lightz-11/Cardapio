@@ -7,7 +7,8 @@ export const Container = styled("div", {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    overflow: "hidden"
+    overflow: "hidden",
+    '-webkit-overflow-scrolling': "touch"
 });
 
 export const Celular = styled("div", {
