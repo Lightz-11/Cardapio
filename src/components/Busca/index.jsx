@@ -7,7 +7,7 @@ export function Busca({setValor}) {
     return (
         <Container>
             <BiSearchAlt color='#ffffff90' size={23}/>
-            <Input type="text" placeholder='Procurar' onChange={(e) => setValor(e.target.value)} />
+            <Input id='busca' type="text" placeholder='Procurar' onChange={(e) => setValor(e.target.value)} />
         </Container>
     );
 }
