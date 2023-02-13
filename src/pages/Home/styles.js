@@ -9,7 +9,8 @@ export const Container = styled("div", {
     position: 'fixed',
     top: 0,
     left: 0,
-    "touch-action": 'none'
+    "touch-action": 'none',
+    overflow: 'hidden'
 
 });
 
