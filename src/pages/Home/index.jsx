@@ -91,6 +91,10 @@ export function Home() {
         // return () => clearInterval(intervalId);
     }, []);
 
+    document.addEventListener("touchmove", function(event) {
+        event.preventDefault();
+    });
+
     useEffect(() => {
         function replaceSpecialChars(str) {
             str = str.replace(/[ÀÁÂÃÄÅ]/, "A");
