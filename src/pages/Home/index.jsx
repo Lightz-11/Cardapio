@@ -1,24 +1,19 @@
 import {
-    Celular,
     Container,
     Grid,
     Header,
     Main,
-    MenuInferior,
-    MenuSuperior
 } from "./styles";
-import { FaSignal } from "react-icons/fa";
-import { BsBatteryFull, BsWifi } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { Busca } from "../../components/Busca";
 import { Categoria } from "../../components/Categoria";
 
 export function Home() {
-    const [time, setTime] = useState(new Date().toLocaleTimeString());
+    // const [time, setTime] = useState(new Date().toLocaleTimeString());
 
     const [busca, setBusca] = useState("");
 
-    const [low, setLow] = useState(false);
+    // const [low, setLow] = useState(false);
 
     const [categorias, setCategorias] = useState([
         {
@@ -84,17 +79,17 @@ export function Home() {
 
     const [categoriasMostradas, setCategoriasMostradas] = useState(categorias);
 
-    useEffect(() => {
-        if (window.innerWidth < 501) {
-            setLow(true);
-        }
+    // useEffect(() => {
+    //     if (window.innerWidth < 501) {
+    //         setLow(true);
+    //     }
 
-        const intervalId = setInterval(() => {
-            setTime(new Date().toLocaleTimeString());
-        }, 1000);
+    //     const intervalId = setInterval(() => {
+    //         setTime(new Date().toLocaleTimeString());
+    //     }, 1000);
 
-        return () => clearInterval(intervalId);
-    }, []);
+    //     return () => clearInterval(intervalId);
+    // }, []);
 
     useEffect(() => {
         function replaceSpecialChars(str) {
@@ -132,35 +127,22 @@ export function Home() {
 
     return (
         <Container>
-            <Celular>
-                {!low && (
-                    <MenuSuperior>
-                        <span title={time}>{time.substring(0, 5)}</span>
 
-                        <div>
-                            <FaSignal color="white" size={20} />
-                            <BsWifi color="white" size={22} />
-                            <BsBatteryFull color="white" size={23} />
-                        </div>
-                    </MenuSuperior>
-                )}
+            <Header>
+                <h1>Cardápio Route Serrana</h1>
+                <Busca setValor={setBusca} />
+            </Header>
 
-                <Header>
-                    <h1>Cardápio Route Serrana</h1>
-                    <Busca setValor={setBusca} />
-                </Header>
+            <Main>
 
-                <Main>
-                    <Grid>
-                        {categoriasMostradas.map((categoria) => (
-                            <Categoria key={categoria.id} data={categoria} />
-                        ))}
-                    </Grid>
-                </Main>
+            <Grid>
+                {categoriasMostradas.map((categoria) => (
+                    <Categoria key={categoria.id} data={categoria} />
+                ))}
+            </Grid>
 
-                {!low && <MenuInferior />}
+            </Main>
 
-            </Celular>
         </Container>
     );
 }
