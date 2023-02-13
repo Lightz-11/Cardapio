@@ -15,7 +15,7 @@ export const GlobalStyles = globalCss({
         "::-webkit-scrollbar": {
             backgroundColor: "#1d1d1d",
             //width: '7px',
-            width: "5px",
+            width: "0px",
             borderTopRightRadius: "5px",
             borderBottomRightRadius: "5px"
         },
@@ -31,7 +31,6 @@ export const GlobalStyles = globalCss({
         fontFamily: "Arial, Helvetica, sans-serif",
         backgroundColor: "rgb(10,10,10)",
         overflow: "visible",
-        position: 'fixed'
     },
 
     button: {

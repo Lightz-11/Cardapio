@@ -3,13 +3,13 @@ import { styled } from "../../stitches.config";
 export const Container = styled("div", {
     
     width: "100%",
-    height: "100%",
+    height: "400px",
     borderRadius: 0,
     border: "none",
     position: 'fixed',
+    overflow: 'hidden',
     top: 0,
     left: 0,
-    overflow: 'visible'
 });
 
 export const Header = styled('div', {
@@ -18,10 +18,6 @@ export const Header = styled('div', {
     width: '100%',
     padding: "2rem 2.5rem 0rem 2.5rem",
     top: 0,
-
-    input: {
-        touchAction: "manipulation"
-    },
 
     h1: {
         color: "white",
