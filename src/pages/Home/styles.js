@@ -30,7 +30,7 @@ export const Header = styled('div', {
 
 export const Main = styled("div", {
 
-    padding: "12rem 2.5rem 2rem 2.5rem",
+    margin: "12rem 2.5rem 2rem 2.5rem",
     height: "100%",
     width: '100%',
     overflow: "hidden",
