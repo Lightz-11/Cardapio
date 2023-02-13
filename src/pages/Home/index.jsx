@@ -117,13 +117,13 @@ export function Home() {
         }
     }, [busca]);
 
-    window.addEventListener("resize", () => {
-        if (window.innerWidth < 501) {
-            setLow(true);
-        } else {
-            setLow(false);
-        }
-    });
+    // window.addEventListener("resize", () => {
+    //     if (window.innerWidth < 501) {
+    //         setLow(true);
+    //     } else {
+    //         setLow(false);
+    //     }
+    // });
 
     return (
         <Container>
@@ -135,11 +135,11 @@ export function Home() {
 
             <Main>
 
-            <Grid>
-                {categoriasMostradas.map((categoria) => (
-                    <Categoria key={categoria.id} data={categoria} />
-                ))}
-            </Grid>
+                <Grid>
+                    {categoriasMostradas.map((categoria) => (
+                        <Categoria key={categoria.id} data={categoria} />
+                    ))}
+                </Grid>
 
             </Main>
 

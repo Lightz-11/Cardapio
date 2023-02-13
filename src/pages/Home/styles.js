@@ -14,7 +14,7 @@ export const Container = styled("div", {
 
 });
 
-export const Header = styled('div', {
+export const Header = styled('header', {
 
     position: 'fixed',
     width: '100%',
@@ -23,18 +23,19 @@ export const Header = styled('div', {
 
     h1: {
         color: "white",
-        fontSize: "2.5rem"
+        fontSize: "2.5rem",
+        whiteSpace: 'nowrap',
+        textOverflow: 'ellipsis'
     },
 
 });
 
-export const Main = styled("div", {
+export const Main = styled("main", {
 
-    margin: "12rem 2.5rem 2rem 2.5rem",
+    padding: "12rem 2.5rem 2rem 2.5rem",
     height: "100%",
     width: '100%',
     overflow: "hidden",
-    position: 'fixed'
 
 });
 

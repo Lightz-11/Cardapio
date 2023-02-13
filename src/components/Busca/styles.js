@@ -3,7 +3,7 @@ import {styled} from '../../stitches.config';
 export const Container = styled('div', {
 
     width: '100%',
-    margin: '2rem 0',
+    marginTop: '2rem',
     height: '3rem',
     background: 'rgb(20,20,20)',
     borderRadius: '1rem',
