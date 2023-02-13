@@ -15,7 +15,6 @@ export const Container = styled("div", {
 export const Header = styled('div', {
 
     position: 'fixed',
-    zIndex: 2,
     width: '100%',
     padding: "2rem 2.5rem 0rem 2.5rem",
     top: 0,
@@ -35,7 +34,6 @@ export const Main = styled("div", {
     height: "100%",
     width: '100%',
     overflow: "hidden",
-    position: 'fixed'
 
 });
 
@@ -47,6 +45,10 @@ export const Grid = styled("div", {
     borderRadius: "0rem 0rem 2rem 2rem",
     overflowY: "auto",
     gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+
+    '@lg': {
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    },
 
     h1: {
         color: "white",

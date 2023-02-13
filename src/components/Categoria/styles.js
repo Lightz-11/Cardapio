@@ -10,6 +10,10 @@ export const Container = styled(Link, {
     justifyContent: 'center',
     position: 'relative',
 
+    '@lg': {
+        height: '324px'
+    },
+
     img: {
         borderRadius: '2rem',
         objectFit: 'cover'
