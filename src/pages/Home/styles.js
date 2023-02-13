@@ -9,7 +9,6 @@ export const Container = styled("div", {
     position: 'fixed',
     top: 0,
     left: 0,
-    "touch-action": 'none',
     overflow: 'hidden'
 
 });
@@ -20,6 +19,10 @@ export const Header = styled('div', {
     width: '100%',
     padding: "2rem 2.5rem 0rem 2.5rem",
     top: 0,
+
+    input: {
+        touchAction: "manipulation"
+    },
 
     h1: {
         color: "white",

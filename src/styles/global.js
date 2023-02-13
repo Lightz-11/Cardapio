@@ -4,7 +4,6 @@ export const GlobalStyles = globalCss({
     ":root": {
         fontSize: "62.5%",
         overflow: "hidden",
-        "touch-action": 'none'
     },
 
     "*": {
@@ -32,7 +31,6 @@ export const GlobalStyles = globalCss({
         fontFamily: "Arial, Helvetica, sans-serif",
         backgroundColor: "rgb(10,10,10)",
         overflow: "hidden",
-        "touch-action": 'none'
     },
 
     button: {
