@@ -125,6 +125,10 @@ export function Home() {
         }
     });
 
+    window.ontouchmove = function(event) {
+        event.preventDefault();
+    };
+
     return (
         <Container>
 

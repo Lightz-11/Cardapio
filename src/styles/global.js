@@ -27,7 +27,7 @@ export const GlobalStyles = globalCss({
 
     body: {
         width: "100vw",
-        height: "400px",
+        height: "100vh",
         fontFamily: "Arial, Helvetica, sans-serif",
         backgroundColor: "rgb(10,10,10)",
         overflow: "hidden",
