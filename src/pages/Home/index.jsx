@@ -13,7 +13,7 @@ export function Home() {
 
     const [busca, setBusca] = useState("");
 
-    // const [low, setLow] = useState(false);
+    const [low, setLow] = useState(false);
 
     const [categorias, setCategorias] = useState([
         {
@@ -79,17 +79,17 @@ export function Home() {
 
     const [categoriasMostradas, setCategoriasMostradas] = useState(categorias);
 
-    // useEffect(() => {
-    //     if (window.innerWidth < 501) {
-    //         setLow(true);
-    //     }
+    useEffect(() => {
+        if (window.innerWidth < 420) {
+            setLow(true);
+        }
 
-    //     const intervalId = setInterval(() => {
-    //         setTime(new Date().toLocaleTimeString());
-    //     }, 1000);
+        // const intervalId = setInterval(() => {
+        //     setTime(new Date().toLocaleTimeString());
+        // }, 1000);
 
-    //     return () => clearInterval(intervalId);
-    // }, []);
+        // return () => clearInterval(intervalId);
+    }, []);
 
     useEffect(() => {
         function replaceSpecialChars(str) {
@@ -117,19 +117,19 @@ export function Home() {
         }
     }, [busca]);
 
-    // window.addEventListener("resize", () => {
-    //     if (window.innerWidth < 501) {
-    //         setLow(true);
-    //     } else {
-    //         setLow(false);
-    //     }
-    // });
+    window.addEventListener("resize", () => {
+        if (window.innerWidth < 420) {
+            setLow(true);
+        } else {
+            setLow(false);
+        }
+    });
 
     return (
         <Container>
 
             <Header>
-                <h1>Cardápio Route Serrana</h1>
+                <h1>{!low && 'Cardápio'} Route Serrana</h1>
                 <Busca setValor={setBusca} />
             </Header>
 

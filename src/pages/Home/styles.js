@@ -14,7 +14,7 @@ export const Container = styled("div", {
 
 });
 
-export const Header = styled('header', {
+export const Header = styled('div', {
 
     position: 'fixed',
     width: '100%',
@@ -30,7 +30,7 @@ export const Header = styled('header', {
 
 });
 
-export const Main = styled("main", {
+export const Main = styled("div", {
 
     padding: "12rem 2.5rem 2rem 2.5rem",
     height: "100%",
