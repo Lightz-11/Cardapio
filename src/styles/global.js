@@ -31,6 +31,7 @@ export const GlobalStyles = globalCss({
         fontFamily: "Arial, Helvetica, sans-serif",
         backgroundColor: "rgb(10,10,10)",
         overflow: "hidden",
+        position: 'fixed'
     },
 
     button: {
