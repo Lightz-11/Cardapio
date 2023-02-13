@@ -15,6 +15,7 @@ export const Container = styled("div", {
 export const Header = styled('div', {
 
     position: 'fixed',
+    zIndex: 2,
     width: '100%',
     padding: "2rem 2.5rem 0rem 2.5rem",
     top: 0,
