@@ -23,14 +23,16 @@ export const Header = styled('div', {
         color: "white",
         fontSize: "2.5rem",
         whiteSpace: 'nowrap',
-        textOverflow: 'ellipsis'
+        textOverflow: 'ellipsis',
+        border: '2px solid transparent',
+        padding: '.3rem 1rem .3rem 0rem',
     },
 
 });
 
 export const Main = styled("div", {
 
-    padding: "12rem 2.5rem 2rem 2.5rem",
+    padding: "13rem 2.5rem 2rem 2.5rem",
     height: "100%",
     width: '100%',
     overflow: "hidden",

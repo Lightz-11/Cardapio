@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
-import { BsBatteryFull, BsWifi } from "react-icons/bs";
-import { FaSignal } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link, useParams } from "react-router-dom";
 import {
-    Celular,
     Container,
     Desc,
+    Header,
+    ImgContainer,
     Info,
     Main,
-    MenuInferior,
-    MenuSuperior,
     Title
 } from "./styles";
 
@@ -40,35 +37,21 @@ export function Produto() {
     });
 
     return (
-        <Container>
-            <Celular>
-                {}
+        <ImgContainer background="https://img.freepik.com/fotos-premium/estilo-de-comida-japonesa-sashimi-cru-de-salmao-fresco_1339-163507.jpg?w=2000">
 
-                {!low && (
-                    <MenuSuperior>
-                        <span title={time}>{time.substring(0, 5)}</span>
+            <Container>
 
-                        <div>
-                            <FaSignal color="white" size={20} />
-                            <BsWifi color="white" size={22} />
-                            <BsBatteryFull color="white" size={23} />
-                        </div>
-                    </MenuSuperior>
-                )}
-
-                <div className="row">
-                    <Link to={"/"}>
-                        <IoIosArrowBack color="white" size={30} /> Voltar
-                    </Link>
-                    <h1 className="title">Sashimi De Salmão</h1>
+                <Header>
+                    <Link to={'/'}><IoIosArrowBack color="white" size={'25px'} /> Voltar</Link>
+                    <h1>Sashimi De Salmão</h1>
                     <div className="vazio"></div>
-                </div>
+                </Header>
+
+            
 
                 <Main>
-                    <img
-                        width={"100%"}
-                        src="https://images.tcdn.com.br/img/img_prod/842178/salmao_fresco_fatiado_tipo_sashimi_77_1_20200903170409.jpg"
-                    />
+
+                    
 
                     <Info>
                         <Title>Descrição</Title>
@@ -90,8 +73,8 @@ export function Produto() {
                     </Info>
                 </Main>
 
-                {!low && <MenuInferior />}
-            </Celular>
-        </Container>
+            </Container>
+
+        </ImgContainer>
     );
 }

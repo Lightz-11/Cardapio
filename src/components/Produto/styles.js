@@ -12,8 +12,20 @@ export const Container = styled("div", {
     },
 
     img: {
+        width: '100%',
+        height: '162px',
         borderRadius: "2rem",
-        objectFit: "cover"
+        objectFit: "cover",
+    },
+
+    '@lg': {
+        a: {
+            height: '324px'
+        },
+
+        img: {
+            height: '324px'
+        },
     },
 
     h1: {
