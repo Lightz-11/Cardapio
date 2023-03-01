@@ -86,12 +86,7 @@ export function Home() {
         } else {
             setLow(false)
         }
-
-        // const intervalId = setInterval(() => {
-        //     setTime(new Date().toLocaleTimeString());
-        // }, 1000);
-
-        // return () => clearInterval(intervalId);
+        
     }, []);
 
     useEffect(() => {
