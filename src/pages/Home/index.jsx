@@ -13,7 +13,7 @@ export function Home() {
 
     const [busca, setBusca] = useState("");
 
-    const [low, setLow] = useState(false);
+    const [low, setLow] = useState(true);
 
     const [categorias, setCategorias] = useState([
         {
@@ -80,8 +80,11 @@ export function Home() {
     const [categoriasMostradas, setCategoriasMostradas] = useState(categorias);
 
     useEffect(() => {
+
         if (window.innerWidth < 420) {
             setLow(true);
+        } else {
+            setLow(false)
         }
 
         // const intervalId = setInterval(() => {

@@ -87,7 +87,7 @@ export const Main = styled("div", {
 });
 
 export const Title = styled("h2", {
-    color: "grey",
+    color: "white",
     fontWeight: 700
 });
 

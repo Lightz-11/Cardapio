@@ -35,7 +35,7 @@ export const Container = styled("div", {
         fontSize: "1.8rem",
         fontWeight: 100,
         paddingLeft: "1rem",
-        color: "white"
+        color: "grey"
     },
 
     span: {
@@ -43,6 +43,6 @@ export const Container = styled("div", {
         fontSize: "1.6rem",
         fontWeight: 700,
         paddingLeft: "2rem",
-        color: "grey"
+        color: "white"
     }
 });

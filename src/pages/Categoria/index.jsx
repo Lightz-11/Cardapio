@@ -11,7 +11,7 @@ export function Categoria() {
 
     const [busca, setBusca] = useState('')
 
-    const [low, setLow] = useState(false)
+    const [low, setLow] = useState(true)
 
     const [produtos, setProdutos] = useState(
     [
@@ -42,6 +42,8 @@ export function Categoria() {
 
         if (window.innerWidth < 420) {
             setLow(true)
+        } else {
+            setLow(false)
         }
         
     }, []);
